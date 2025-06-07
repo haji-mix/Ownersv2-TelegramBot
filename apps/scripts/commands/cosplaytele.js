@@ -39,9 +39,9 @@ async function onStart({ bot, args, message, msg, usages }) {
     caption += `🎭 *Title:* ${cosplay.title}\n`;
     caption += `👤 *Cosplayer:* ${cosplay.cosplayer}\n`;
     caption += `🎮 *Character:* ${cosplay.character}\n`;
+    caption += `🔐 *Password: ${data.password}*\n`;
     
     if (cosplay.downloadLinks?.length > 0) {
-      caption += `\n📥 *Password: ${data.password}*\n`;
       caption += "\n📥 *Download Links:*\n";
       caption += cosplay.downloadLinks.map(link => `- ${link}`).join("\n");
     }
